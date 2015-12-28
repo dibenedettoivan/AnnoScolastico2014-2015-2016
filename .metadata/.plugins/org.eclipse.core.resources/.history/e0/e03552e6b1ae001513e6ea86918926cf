@@ -1,0 +1,42 @@
+
+public class Banca {
+	
+	//Attributi
+	private final int DEFAULT_MAX_TOT_CLIENTI = 50;
+	private Cliente[] cliente;
+	
+	//Costruttore
+	public Banca(){
+		cliente = new Cliente [DEFAULT_MAX_TOT_CLIENTI];
+	}
+	
+	public Banca(int mxTotCLienti){
+		
+	}
+	
+	//Metodi
+	public boolean registra(Cliente cliente){
+		return false;
+		
+	}
+	
+	void cancella(Cliente cliente){
+		
+	}
+	
+	public Cliente trova(int numCliente){
+		return null;
+		
+	}
+	
+	public Cliente trova(String nome){
+		return null;
+		
+	}
+	
+	public boolean trasferisci(int numClienteSrg, int numClienteDst, double quanto){
+		return false;
+		
+	}
+
+}

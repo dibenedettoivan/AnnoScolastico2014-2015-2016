@@ -1,0 +1,67 @@
+/*Creare un metodo per calcolare il fattoriale di un intero positivo senza usare la ricorsione*/
+
+/*import java.util.Scanner;
+
+public class Fattoriale{
+	
+	private static Scanner in = new Scanner(System.in);
+	private static int n;
+	private static int fattoriale(int n){
+		int k  = 1;
+		for(int i = 1; i <= n; i++){
+			k *= i;
+			
+		}return k;
+	}
+	
+	public static void main(String[] args) {
+		
+		System.out.println("Digita il numero n!: ");
+		n = in.nextInt();
+		
+		System.out.println(fattoriale(n));
+		
+	}
+	
+	
+}*/
+import prog.io.*;
+
+public class Fattoriale {
+   public static void main(String[] args) {
+      ConsoleInputManager in = new ConsoleInputManager();
+      ConsoleOutputManager out = new ConsoleOutputManager();
+      int x = in.readInt("Inserire un intero non negativo: ");
+      while (x < 0) {
+         x = in.readInt("L'input non puo` essere negativo. " +
+	                                     " Ripetere l'inserimento: ");
+      }
+      out.println ("x: "+x);
+      out.println ("F");
+      int f = fattoriale(x); // F: rientro del metodo fattoriale
+      out.println("Il fattoriale di " + x + " e` " + f);
+   }
+   
+
+   public static int fattoriale(int n) 
+   {
+   		System.out.println ("n: "+n);
+   		if (n == 0)
+   			return 1;
+    	else 
+    	{
+			System.out.println("R");
+       		return n * fattoriale(n - 1); // R: rientro del metodo fattoriale
+    	}
+		
+	// versione alternativa iterativa per il calcolo del fattoriale
+	//	int ris = 1;
+	//	while (n != 0)
+	//	{
+	//		ris = ris * n;
+	//		n = n -1;
+	//	}
+	//	return ris;
+   }
+   
+}

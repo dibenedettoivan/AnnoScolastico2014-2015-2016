@@ -1,0 +1,37 @@
+import java.lang.Math;
+
+public class SecondClass {
+
+	private double ris, x, y; 
+	
+	public double getRis(){
+		return ris;
+	}
+	public void setRis(double x, double y){
+		this.x = x;
+		this.y = y;
+	}
+	
+	
+	public void addizione() {
+		if(x > 0 && y > 0){
+			ris = x + y;
+		}
+	}
+	public void divisione(){
+		ris = x / y;
+	}
+	public void potenza(){
+		ris = Math.pow(x, y) ; 
+	}
+	public void sottrazione(){
+		ris = x - y;
+	}
+	public void moltiplicazione(){
+		ris = x * y;
+	}
+	public void binario(){
+		int div = (int) (x / 2);
+		ris = x % 2;
+	}
+}

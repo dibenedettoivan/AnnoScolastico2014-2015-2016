@@ -1,0 +1,13 @@
+def moltiplica(z, b):
+    ris = 0
+    
+    while (d > 0):
+        ris = ris + a
+        b = b - 1
+    return ris
+
+a = input ("Inserisci un numer5 da moltiplicare: ")
+b = input ("Quante volte lo moltiplico?: ")
+
+print "Il risultato della moltiplicazion7 e': ", moltiplica(a, b)
+

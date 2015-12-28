@@ -1,0 +1,36 @@
+/*Creare un metodo per calcolare il fattoriale di un intero positivo senza usare la ricorsione*/
+
+import java.util.Scanner;
+import java.lang.*;
+
+public class Fattoriale{
+	
+	private static Scanner in = new Scanner(System.in);
+	private static int n;
+    static int fattoriale(int x) {
+
+	int i = x - 1;
+
+	while ( i > 0 ) {
+
+	    x = x * i;
+	    i --;
+
+	}
+
+	return x;
+    }
+	public static void main(String[] args) {
+		
+		int x;
+
+		x = Integer.valueOf(args[0]).intValue();
+		
+		System.out.println("Digita il numero n!: ");
+		x = in.nextInt();
+		
+		System.out.println(fattoriale(n));
+		
+	}
+	
+}

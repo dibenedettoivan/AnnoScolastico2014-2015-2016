@@ -1,0 +1,18 @@
+
+public class Esercizio3 {
+	
+	private static String school[] = {"Alessandra" , "Sferrazza", "100", "Ivan", "Di Benedetto", "100", "Federica", "Sferrazza", "75"};
+	private static int a, b, c, d; 
+	
+	public static void main(String[] args) {
+		
+		for(int i = 0; i < school.length; i++){
+			a = Integer.parseInt(school[2]);
+			b = Integer.parseInt(school[5]);
+			c = Integer.parseInt(school[8]);
+			d = a * b / c; 
+		}System.out.println(d);
+		
+	}
+
+}

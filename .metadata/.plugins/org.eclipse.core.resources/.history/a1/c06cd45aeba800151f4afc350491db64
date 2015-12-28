@@ -1,0 +1,23 @@
+/* Dato un vettore di interi determinare il secondo numero più grande. Non modificare l'array dato.
+ * Se possibile, scorri l'array una sola volta. Commenta dove ritieni opportuno. Rientra tutte le linee di codice per non 
+ * subire penalizzazioni.
+ * Ad esempio: {45,51,28,75,49,42} produce 51.
+ * Di Benedetto Ivan*/
+
+public class Esercizio1 {
+	
+	private static int array[] = {45, 51, 28, 75, 49, 42}; //Produce solo il 51.
+	private static int x;
+	
+	public static void main(String[] args) {
+		
+		for(int i = 0, j =  i + 1; i < array.length - 1 && j < array.length; i++, j++){
+			if(array[i] > array[j]){
+				x = array[i]; 
+				array[i] = array[j];
+				array[j] = x;
+			}System.out.print(array[i] + " ");
+		}
+	}
+}
+

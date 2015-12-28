@@ -1,0 +1,36 @@
+
+public class Cliente {
+	
+	//Attributi
+	private String nome;
+	private int numCliente, pin;
+	private Conto conto;
+	
+	//Costruttore
+	public Cliente(String nome, int numeCliente, int pin, Conto conto){
+		this.setNome(nome);
+		this.numCliente = numCliente;
+		this.pin = pin;
+		this.conto = conto;		
+	}
+	
+	//Metodi
+	public boolean verifica(int numCliente, int pin){
+		return false;
+		
+	}
+	
+	public int ritornaNumCliente(){
+		return 0;
+		
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+}
